@@ -9,7 +9,7 @@ export default function Projects() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    
+
     const ctx = gsap.context(() => {
       // Parallax effect on project thumbnails
       const visuals = gsap.utils.toArray(".project-visual");
@@ -35,11 +35,11 @@ export default function Projects() {
       title: "Battleship",
       tags: ["HTML", "CSS", "Javascript", "Node.js"],
       description: "Used components of Javascript to implement basic data structures through the game of Battleship. Used a terminal to display ships and tracked where ships are hit or missed.",
-      github: "https://github.com/Siam24857/battleship",
-      link: "/projects/battleship",
+      github: "https://github.com/Siam24857/B13-A8-platfoprm.git",
+      link: "https://b13-a8-platfoprm-j9sv.vercel.app",
       visual: (
         <div className="bg-dark-card p-4 rounded-lg border border-white/5 shadow-2xl overflow-hidden group">
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.6 }}
             className="bg-black/60 font-mono text-[10px] p-6 text-green-400 leading-relaxed"
@@ -63,8 +63,8 @@ export default function Projects() {
       title: "Movie Titles API",
       tags: ["HTML", "CSS", "Javascript", "API", "Version Control"],
       description: "Uses a public movie API to build a collection movie list that sorts from A to Z or vice versa. It also counts how many movies in each container and adds user's favorite movies into another container.",
-      github: "https://github.com/Siam24857/movie-api",
-      link: "/projects/movie-api",
+      github: "https://github.com/Siam24857/B13-As-7.git",
+      link: "https://b13-7-as-2026.netlify.app",
       visual: (
         <div className="grid grid-cols-2 gap-4">
           <motion.img
@@ -86,11 +86,11 @@ export default function Projects() {
       title: "Javascript Calculator",
       tags: ["HTML", "CSS", "Javascript", "Node.js"],
       description: "Uses simple algorithm concepts in Javascript to produce an arithmetic result in a terminal.",
-      github: "#",
-      link: "#",
+      github: "https://siam24857.github.io/AI-Nexus/porfoliowebsit.html",
+      link: "https://siam24857.github.io/AI-Nexus/calculater.html",
       visual: (
         <div className="bg-dark-card p-4 rounded-lg border border-white/5 shadow-2xl overflow-hidden group">
-          <motion.div 
+          <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.6 }}
             className="bg-black/60 font-mono text-[10px] p-6 text-blue-300 leading-relaxed"
@@ -112,10 +112,10 @@ export default function Projects() {
       title: "SaaS Landing Page",
       tags: ["HTML", "CSS"],
       description: "Used HTML concepts such as creating a form and a basic skeleton. It also used components of both the grid and flexbox elements to produce a landing page.",
-      github: "https://github.com/Siam24857/saas-landing",
-      link: "/projects/neural-stream", // Using existing page for demo
+      github: "https://github.com/Siam24857/B13-6-A-2026.git",
+      link: "https://fantastic-tanuki-e19a9a.netlify.app",
       visual: (
-        <motion.div 
+        <motion.div
           whileHover={{ y: -10 }}
           className="bg-white rounded-md overflow-hidden border border-white/10 shadow-2xl"
         >
@@ -171,7 +171,7 @@ export default function Projects() {
                 </div>
                 <p className="text-text-muted mb-8 max-w-md leading-relaxed">{project.description}</p>
                 <div className="flex gap-6 items-center">
-                  <motion.a 
+                  <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={project.github}
@@ -180,9 +180,9 @@ export default function Projects() {
                   >
                     View Github
                   </motion.a>
-                  <motion.a 
+                  <motion.a
                     whileHover={{ x: 5 }}
-                    className="text-sm font-bold flex items-center group" 
+                    className="text-sm font-bold flex items-center group"
                     href={project.link}
                   >
                     View project
