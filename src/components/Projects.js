@@ -35,8 +35,8 @@ export default function Projects() {
       title: "Battleship",
       tags: ["HTML", "CSS", "Javascript", "Node.js"],
       description: "Used components of Javascript to implement basic data structures through the game of Battleship. Used a terminal to display ships and tracked where ships are hit or missed.",
-      github: "#",
-      link: "#",
+      github: "https://github.com/Siam24857/battleship",
+      link: "/projects/battleship",
       visual: (
         <div className="bg-dark-card p-4 rounded-lg border border-white/5 shadow-2xl overflow-hidden group">
           <motion.div 
@@ -63,8 +63,8 @@ export default function Projects() {
       title: "Movie Titles API",
       tags: ["HTML", "CSS", "Javascript", "API", "Version Control"],
       description: "Uses a public movie API to build a collection movie list that sorts from A to Z or vice versa. It also counts how many movies in each container and adds user's favorite movies into another container.",
-      github: "#",
-      link: "#",
+      github: "https://github.com/Siam24857/movie-api",
+      link: "/projects/movie-api",
       visual: (
         <div className="grid grid-cols-2 gap-4">
           <motion.img
@@ -112,8 +112,8 @@ export default function Projects() {
       title: "SaaS Landing Page",
       tags: ["HTML", "CSS"],
       description: "Used HTML concepts such as creating a form and a basic skeleton. It also used components of both the grid and flexbox elements to produce a landing page.",
-      github: "#",
-      link: "#",
+      github: "https://github.com/Siam24857/saas-landing",
+      link: "/projects/neural-stream", // Using existing page for demo
       visual: (
         <motion.div 
           whileHover={{ y: -10 }}
@@ -171,13 +171,15 @@ export default function Projects() {
                 </div>
                 <p className="text-text-muted mb-8 max-w-md leading-relaxed">{project.description}</p>
                 <div className="flex gap-6 items-center">
-                  <motion.button 
+                  <motion.a 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-coral-accent text-white px-6 py-2 rounded-sm text-sm font-bold shadow-lg"
+                    href={project.github}
+                    target="_blank"
+                    className="bg-coral-accent text-white px-6 py-2 rounded-sm text-sm font-bold shadow-lg inline-block"
                   >
                     View Github
-                  </motion.button>
+                  </motion.a>
                   <motion.a 
                     whileHover={{ x: 5 }}
                     className="text-sm font-bold flex items-center group" 

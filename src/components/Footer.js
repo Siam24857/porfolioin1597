@@ -1,11 +1,22 @@
 "use client";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="py-16 px-6 border-t border-white/5 text-center">
       <div className="max-w-7xl mx-auto">
-        <h3 className="text-xl font-bold mb-4">Jensen Omega</h3>
-        <p className="text-sm text-text-muted mb-10">Designed with love, all right reserved for Jensen Omega.</p>
+        <div className="flex flex-col items-center mb-6">
+          <div className="relative w-12 h-12 overflow-hidden rounded-xl bg-dark-card border border-white/10 mb-4">
+            <Image
+              src="/icon.png"
+              alt="Sheikh Siam Logo"
+              fill
+              className="object-cover p-2"
+            />
+          </div>
+          <h3 className="text-xl font-bold">Sheikh Siam</h3>
+        </div>
+        <p className="text-sm text-text-muted mb-10">Designed with love, all right reserved for Sheikh Siam.</p>
         <div className="flex justify-center space-x-6">
           <a className="p-3 bg-dark-card border border-white/10 rounded-full hover:border-coral-accent transition-colors" href="mailto:contact@jensenomega.com">
             <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">

@@ -92,9 +92,9 @@ export default function About() {
 
         {/* Right: About Description */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-5xl font-extrabold mb-8">About me</h2>
+          <h2 className="text-5xl font-extrabold mb-8">About Sheikh Siam</h2>
           <p className="text-text-muted leading-relaxed mb-12 max-w-lg">
-            I started my software journey from photography. Through that, I learned to love the process of creating from scratch. Since then, this has led me to software development as it fulfills my love for learning and building things.
+            Driven by a passion for creating high-fidelity digital solutions, I specialize in building seamless web and mobile experiences. My journey from photography to software development has instilled a unique eye for detail and a commitment to aesthetic excellence.
           </p>
           <div ref={statsRef} className="flex gap-12 md:gap-20">
             {stats.map((stat, index) => (

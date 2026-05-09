@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 
@@ -39,14 +40,24 @@ export default function Navbar() {
         className="absolute bottom-0 left-0 right-0 h-[2px] bg-coral-accent origin-left"
         style={{ scaleX }}
       />
-      
+
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Link href="/" className="text-xl font-bold">Jensen Omega</Link>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative w-10 h-10 overflow-hidden rounded-lg bg-dark-card border border-white/10 group-hover:border-coral-accent transition-colors">
+              <Image
+                src="/icon.png"
+                alt="Sheikh Siam Logo"
+                fill
+                className="object-cover p-1.5"
+              />
+            </div>
+            <span className="text-xl font-bold">Sheikh Siam</span>
+          </Link>
         </motion.div>
         <div className="hidden md:flex space-x-8 text-sm font-medium text-text-muted">
           {navLinks.map((link, index) => (

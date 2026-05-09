@@ -107,7 +107,7 @@ export default function Hero() {
             {/* Main User Photo */}
             <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-dark-card shadow-2xl">
               <img
-                alt="Jensen Omega"
+                alt="Sheikh Siam"
                 className="w-full h-full object-cover object-top"
                 src="https://www.image2url.com/r2/default/images/1778264415757-4d33eeed-bf69-4b3d-b55c-a6ce978878ec.jpeg"
               />

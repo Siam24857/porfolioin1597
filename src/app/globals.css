@@ -2,14 +2,44 @@
 @import "tailwindcss";
 
 @theme {
+  --color-background: #121921;
+  --color-on-background: #ffffff;
+  --color-surface: #1a242e;
+  --color-on-surface: #e2e8f0;
+  --color-on-surface-variant: #a0aec0;
+  --color-surface-container-low: #1e2a36;
+  --color-surface-container-highest: #2d3748;
+  
+  --color-primary: #ff7a5c;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ff7a5c;
+  
+  --color-outline: #4a5568;
+  --color-outline-variant: #2d3748;
+  
   --color-dark-bg: #121921;
   --color-dark-card: #1a242e;
   --color-coral-accent: #ff7a5c;
   --color-text-muted: #a0aec0;
   
   --font-sans: "Inter", "system-ui", "sans-serif";
+  --font-display: "Inter", "system-ui", "sans-serif";
+  --font-code: "JetBrains Mono", "monospace";
+  
+  --spacing-margin-page: 2rem;
+  --spacing-section-gap: 8rem;
+  --spacing-gutter: 2rem;
+  --container-max: 80rem;
+  
+  --text-display-xl: 4.5rem;
+  --text-display-lg: 3.5rem;
+  --text-headline-md: 2rem;
+  --text-body-lg: 1.125rem;
+  --text-code-sm: 0.875rem;
   
   --radius-sm: 0.125rem;
+  --radius-xl: 1rem;
+  --radius-3xl: 1.5rem;
 }
 
 :root {
@@ -65,5 +95,20 @@
 
 @utility scroll-smooth {
   scroll-behavior: smooth;
+}
+
+@utility glass-card {
+  background: rgba(26, 36, 46, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@utility neon-glow {
+  box-shadow: 0 0 20px rgba(255, 122, 92, 0.1);
+  border: 1px solid rgba(255, 122, 92, 0.2);
+}
+
+@utility bg-glow-gradient {
+  background: radial-gradient(circle, rgba(255, 122, 92, 0.2) 0%, transparent 70%);
 }
 
