@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
+ 
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +51,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-10 h-10 overflow-hidden rounded-lg bg-dark-card border border-white/10 group-hover:border-coral-accent transition-colors">
               <Image
-                src="/icon.png"
+                src="/favicon.ico"
                 alt="Sheikh Siam Logo"
                 fill
                 className="object-cover p-1.5"

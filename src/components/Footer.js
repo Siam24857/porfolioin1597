@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="py-16 px-6 border-t border-white/5 text-center">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-6">
-          <div className="relative w-12 h-12 overflow-hidden rounded-xl bg-dark-card border border-white/10 mb-4">
+          <div className="relative w-12 h-12 overflow-hidden  bg-dark-card border border-white/10 mb-4">
             <Image
-              src="/icon.png"
+              src="/favicon.ico"
               alt="Sheikh Siam Logo"
               fill
               className="object-cover p-2"

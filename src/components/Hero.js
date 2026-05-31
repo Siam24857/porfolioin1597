@@ -62,7 +62,7 @@ export default function Hero() {
             <p className="text-2xl font-light">I'm Sheikh Siam</p>
           </div>
           <div className="reveal-text">
-            <h1 className="text-5xl md:text-7xl font-extrabold mb-10 leading-tight">Front-End <br />Developer</h1>
+            <h1 className="text-5xl md:text-7xl font-extrabold mb-10 leading-tight">Full-stack <br />Developer</h1>
           </div>
           <div className="reveal-text flex flex-wrap gap-4">
             <motion.a
@@ -72,7 +72,7 @@ export default function Hero() {
               className="bg-coral-accent text-white px-8 py-3 rounded-sm font-semibold transition-all inline-block"
             >
               Got a project?
-            </motion.a>
+            </motion.a> 
             <motion.a
               whileHover={{ scale: 1.05, borderColor: "#ff7a5c" }}
               whileTap={{ scale: 0.95 }}
