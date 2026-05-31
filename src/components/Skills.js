@@ -17,7 +17,6 @@ const skills = [
   "FIREBASE",
   "JWT",
   "FRAMER MOTION",
-  "SOCKET.IO",
   "GIT",
   "GITHUB",
   "RESPONSIVE DESIGN",
