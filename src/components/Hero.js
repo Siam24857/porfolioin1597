@@ -68,7 +68,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255, 122, 92, 0.4)" }}
               whileTap={{ scale: 0.95 }}
-              href="#contacts"
+              href="#projects"
               className="bg-coral-accent text-white px-8 py-3 rounded-sm font-semibold transition-all inline-block"
             >
               Got a project?
@@ -76,7 +76,7 @@ export default function Hero() {
             <motion.a
               whileHover={{ scale: 1.05, borderColor: "#ff7a5c" }}
               whileTap={{ scale: 0.95 }}
-              href="#contacts"
+              href="https://drive.google.com/file/d/1tVV3xokzdeEHHCWqVw-QBk7WMNqAgrqf/view?usp=sharing"
               className="border border-white/30 px-8 py-3 rounded-sm font-semibold transition-all inline-block"
             >
               My resume
